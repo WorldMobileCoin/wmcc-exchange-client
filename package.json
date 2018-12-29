@@ -1,0 +1,33 @@
+{
+  "name": "wmcc-exchange-client",
+  "version": "1.0.0",
+  "release": "30 Dec 2018",
+  "productName": "wmcc-exchange-client",
+  "description": "WorldMobileCoin © WMCC Exchange Client",
+  "homepage": "https://github.com/WorldMobileCoin/wmcc-exchange-client",
+  "repository": "git://github.com/WorldMobileCoin/wmcc-exchange-client.git",
+  "bugs": {
+    "url": "https://github.com/WorldMobileCoin/wmcc-exchange-client/issues"
+  },
+  "author": "ParkAlter@WorldMobileCoin <worldmobilecoin@gmail.com>",
+  "main": "index.js",
+  "keywords": [
+    "worldmobilecoin",
+    "wmcc-exchange-client",
+    "wmcc",
+    "exchange",
+    "client",
+    "desktop",
+    "transaction",
+    "address",
+    "network",
+    "p2p",
+    "cryptocurrency",
+    "blockchain"
+  ],
+  "dependencies": {
+    "wmcc-decimal": "*",
+    "wmcc-socket": "*"
+  },
+  "license": "MIT"
+}

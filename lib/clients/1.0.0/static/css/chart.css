@@ -1,0 +1,137 @@
+/*font*/
+@font-face {
+  font-family: "UbuntuM";
+  src: url("./font/Ubuntu-M.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html body {
+  padding: 0;
+  margin: 0;
+}
+
+body * {
+  font: 11px UbuntuM;
+  fill: #334;
+}
+
+text {
+  fill: #334;
+}
+
+path {
+  fill: none;
+  stroke-width: 1;
+}
+
+svg g.axis line,
+svg g.axis path {
+  stroke: #556;
+}
+
+svg g.axis text {
+  fill: #556;
+}
+
+path.ohlc {
+  stroke: #AAA;
+  stroke-width: 1;
+}
+
+path.ohlc.up {
+  stroke: #0C2;
+  fill: red;
+}
+
+path.ohlc.down {
+  stroke: #F56;
+  fill: red;
+}
+
+path.candle {
+  stroke: #389;
+}
+
+path.candle.body {
+  stroke-width: 0;
+}
+
+path.candle.up {
+  fill: #0C2;
+  stroke: #0C2;
+}
+
+path.candle.down {
+  fill: #F56;
+  stroke: #F56;
+}
+
+/*.ma-0 path.line {
+  stroke: #1f77b4;
+}
+
+.ma-1 path.line {
+  stroke: #aec7e8;
+}*/
+
+text.ohlc-text tspan.ohlc-label{
+  fill: #AAA;
+}
+
+text.ohlc-text tspan.ohlc-up{
+  fill: #0C2;
+}
+
+text.ohlc-text tspan.ohlc-down{
+  fill: #F56;
+}
+
+text.ohlc-text tspan.ohlc-flat{
+  fill: #389;
+}
+
+path.volume {
+  fill: #DDD;
+}
+
+.crosshair {
+  cursor: crosshair;
+}
+
+.crosshair path.wire {
+  stroke: #DDD;
+  stroke-dasharray: 3, 2;
+}
+
+.crosshair .axisannotation path {
+  fill: #EEE;
+}
+
+.close.annotation.up path {
+  fill: #0C2;
+}
+
+.close.annotation.down path {
+  fill: #F56;
+}
+
+.close.annotation.flat path {
+  fill: #389;
+}
+
+.close.annotation text{
+  fill: #fff;
+}
+/*
+.close.annotation path.wire {
+  stroke-dasharray: 3, 2;
+}
+
+.close.annotation.up path.wire {
+  stroke: #0C2;
+}
+
+.close.annotation.down path.wire {
+  stroke: #F56;
+}*/

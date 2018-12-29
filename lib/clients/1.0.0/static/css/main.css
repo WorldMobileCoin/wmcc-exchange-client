@@ -1,0 +1,2301 @@
+.button.green , button.green{
+    text-shadow: -2px 2px #007711;
+    background-color: #00CC22;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#00CC22), to(#007711));
+    -webkit-box-shadow: inset 0 0 0 1px #008833;
+}
+
+button.green:hover, .button.green:hover {
+  box-shadow: inset 0 0 0 1px #008833,0 1px 5px #218121;
+}
+
+button.green:active, .button.green:active, .button.active.green, button.active.green {
+  box-shadow: inset 0 0 0 1px #008833,inset 0 5px 30px #218121;
+}
+
+button.disabled, .button.disabled {
+    background-color: #111;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#ddd));
+    -webkit-box-shadow: inset 0 0 0 1px #ccc;
+    text-shadow: 0px 0px #aaa;
+    color: #999;
+    cursor: default;
+}
+
+button.disabled:hover, .button.disabled:hover {
+    box-shadow: inset 0 0 0 1px #ccc;
+}
+
+exchange {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  background: #3A3A4A;
+  background: -webkit-linear-gradient(left, #272737, #2C2C3C 200px, #3A3A4A);
+    z-index: 1;
+}
+
+exchange *{
+  font-family: Ubuntu,sans-serif;
+  color: #3A3A4A;
+}
+
+exchange input::-webkit-input-placeholder{
+  color: #fff;
+  font-weight: normal;
+  font-style: italic;
+  opacity: 0.7;
+}
+
+exchange .hide {
+  display: none;
+}
+
+exchange .top-right {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+exchange .page {
+  display: block;
+  text-align:center;
+  width: 100%;
+  padding: 5px 0 8px 0;
+}
+
+exchange .page a {
+  display: inline-block;
+  color: black;
+  text-align:center;
+  padding: 6px 0;
+  min-width: 50px;
+  margin: 1px;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+
+exchange .page a.active {
+  background-color: #889;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#889), to(#667));
+  color: white;
+  border-radius: 5px;
+}
+
+exchange .page a {
+  color: #777;
+  font-weight: bold;
+}
+
+exchange .page a.disable {
+  color: #ddd;
+  background-color: #fff;
+}
+
+exchange .page a:hover:not(.active):not(.disable) {
+  background-color: #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+exchange .loading .wrapper {
+    background-color: #000;
+    opacity: 0.5;
+}
+
+exchange .loading span {
+    position: absolute;
+    width: 100%;
+    top: calc(50% + 5px);
+    text-align: center;
+    color: #fff;
+}
+
+exchange .loading .image {
+    position: absolute;
+    background-size: 100%;
+    background-position: 50% 50%;
+    height: 18px;
+    width: 100%;
+    top: calc(50% - 18px);
+}
+
+exchange .zerodash {
+    font-weight: bold;
+    opacity: .2;
+}
+
+exchange #exchange_notification {
+    position: absolute;
+    right: 5px;
+    top: 45px;
+    z-index: 99999;
+}
+
+exchange #exchange_notification > div {
+  position: relative;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: -1px 1px 5px #ABB;
+    max-width: 300px;
+}
+
+exchange #exchange_notification h1 {
+    font-size: 14px;
+    position: absolute;
+    background: #334;
+    width: calc(100% - 20px);
+    left: 0;
+    top: 0;
+    border-radius: 5px 5px 0 0;
+    padding: 5px 10px;
+    color: #f9f9f9;
+}
+
+exchange #exchange_notification div > span {
+    margin-top: 25px;
+    display: block;
+}
+
+exchange #exchange_notification div > span * {
+  line-height: 16px;
+}
+
+exchange #exchange_notification div.error h1 {
+    background: #D22;
+}
+
+exchange #exchange_notification div.error > span a {
+  line-height: 16px;
+    display: block;
+}
+
+exchange #exchange_notification div.error > span a b {
+  display: inline-block;
+  width: 60px;
+}
+
+exchange #exchange_notification i:before {
+    color: #f9f9f9;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+exchange .header {
+  background-color: #778;
+  background: -webkit-linear-gradient(right, #778, #889 35px, #667);
+  width: calc(100% - 20px);
+  display: block;
+  position: relative;
+  height: 30px;
+  padding: 10px 10px;
+  -webkit-box-shadow: 0px 3px 10px #223;
+}
+
+exchange .header .right {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    line-height: 50px;
+}
+
+exchange .header input {
+  height: 20px;
+  padding: 5px 10px;
+  width: 20%;
+  background-color: rgba(0,0,0,.2);
+  color: #fff;
+  font-size: 13px;
+  font-style: normal;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border: 0;
+  font-family: UbuntuM,sans-serif;
+  -webkit-box-shadow: 1px 1px 0 0 rgba(255,255,255,.41), inset 1px 1px 3px 0 rgba(0,0,0,.10);
+  -moz-box-shadow: 1px 1px 0 0 rgba(255,255,255,.41),inset 1px 1px 3px 0 rgba(0,0,0,.10);
+  box-shadow: 1px 1px 0 0 rgba(255,255,255,.41), inset 1px 1px 3px 0 rgba(0,0,0,.10);
+}
+
+exchange .header i {
+  padding: 0 5px;
+  margin: 0 5px;
+}
+
+exchange .header [class*=" flaticon-"]:before {
+  color: #ddd;
+  cursor: pointer;
+}
+
+exchange .header [class*=" flaticon-"]:hover:before {
+  color: #fff;
+}
+
+exchange .deal_buy {
+    color: #060;
+}
+
+exchange .deal_sell {
+    color: #F00;
+}
+
+exchange .container{
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 90px);
+  overflow-x: hidden;
+}
+
+exchange .container.full{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+exchange .container::after {
+    content: "";
+    background: url(../image/background.jpg) no-repeat center center fixed;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+exchange table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+exchange table * {
+  font-weight: normal;
+  font-size: 13px;
+}
+
+exchange .positive {
+  color: #0A0;
+}
+
+exchange .negative {
+  color: #C00;
+}
+
+exchange table tr:nth-child(odd) {
+  background-color: #fbfbfb;
+}
+
+exchange table tr:nth-child(even) {
+  background-color: #fff;
+}
+
+exchange table tr > :not(td) {
+  background-color: #2C2C3C;
+  color: #eee;
+  cursor: pointer;
+  position: relative;
+  top: 0;
+}
+
+exchange table.sticky tr > :not(td) {
+  position: sticky;
+}
+
+exchange .full table tr > :not(td) {
+  top: 0;
+}
+
+exchange table tr th, exchange table tr td {
+  font-size: 15px;
+  padding: 10px 5px;
+  vertical-align: middle;
+}
+
+exchange table tr:not(:last-child) td {
+  border-bottom: 1px solid #eee;
+}
+
+exchange table tr th {
+  font-size: 14px;
+  border-top: 0;
+  z-index: 999;
+}
+
+exchange table tr td {
+  height: 100%;
+}
+
+exchange .page-prev, exchange .page-next {
+    height: calc(100% - 20px);
+    width: 25px;
+    position: absolute;
+    background: #fff;
+}
+
+exchange .page-prev {
+    left: 0
+}
+
+exchange .page-next {
+    right: 0
+}
+
+exchange .page-prev.disable,
+exchange .page-next.disable,
+exchange .page-prev.disable:after,
+exchange .page-next.disable:after {
+  color: #eee;
+  cursor: default;
+}
+
+exchange .page-prev:after,
+exchange .page-next:after {
+    position: absolute;
+    top: calc(50% - 16px);
+    color: #777;
+    cursor: pointer;
+}
+
+exchange .page-prev:not(.disable):hover,
+exchange .page-next:not(.disable):hover {
+    background: #eee;
+}
+
+exchange .page-prev:after {
+    content: '\25C0';
+    left: 7px;
+}
+
+exchange .page-next:after {
+    content: '\25b6';
+    right: 7px;
+}
+
+exchange table tr th:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  -webkit-box-shadow: 0px 1px 8px #000;
+}
+
+exchange table tr td, exchange table tr td *{
+  font-size: 14px;
+}
+
+exchange table tr td a:not(.active), exchange table tr td a:not(.active) *{
+  cursor: pointer;
+  color: #389;
+}
+
+exchange table tr td a:not(.active):hover{
+  color: #156;
+  text-decoration: underline;
+}
+
+exchange table .link-trade{
+  font-size: 12px;
+  font-weight: bold;
+  font-family: Geneva, Tahoma, Verdana, sans-serif;
+}
+
+exchange table .link-trade.active {
+  position: relative;
+}
+
+exchange table tr.empty td i:before {
+    color: #777 !important;
+    padding: 10px;
+}
+
+exchange table tr th small, exchange table tr td small{
+  font-size: 75%;
+  padding: 0 2px;
+  color: #999 !important;
+}
+
+exchange table tr .sort:after {
+  font-family: Icomoon;
+  font-style: normal;
+  vertical-align: middle;
+  margin-left: 10px;
+  font-size: 14px;
+  color: #ccc;
+  content: "\f132";
+  cursor: pointer;
+  line-height: 20px;
+}
+
+exchange table tr .sort.ascending:after, exchange table tr .sort.descending:after {
+  font-size: 15px;
+}
+
+exchange table tr .sort.ascending:after {
+  color: #3d3;
+  content: "\f130";
+}
+
+exchange table tr .sort.descending:after {
+  color: #d33;
+  content: "\f131";
+}
+
+exchange table.blank tr:nth-child(odd) {
+  background-color: transparent;
+}
+
+exchange table.blank tr > :not(td) {
+  background-color: transparent;
+  position: initial;
+  color: #5C5C6C;
+}
+
+exchange table.blank tr > :not(td):hover {
+  background-color: transparent;
+}
+
+exchange table.blank tr th:before {
+  border-bottom: none;
+}
+
+exchange table.blank tr td {
+  border-bottom: none;
+}
+
+exchange table.sub-table {
+    width: calc(100% - 50px);
+    display: inline-table;
+}
+
+exchange table.sub-table th {
+    padding: 0;
+    color: #334;
+    background: #eee !important;
+}
+
+exchange table.sub-table th:before {
+    display: none;
+}
+
+exchange table tr[sub] > td {
+    position: relative;
+    padding: 10px 0;
+}
+
+exchange .pair-base {
+  font-size: 85%;
+}
+
+exchange .slide-top {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    margin: 0;
+}
+
+exchange .button-flat-dark {
+    border: 1px solid #3a3a4a;
+    padding: 3px 15px;
+    background-color: #556;
+    background: -webkit-linear-gradient(top, #556, #445);
+    color: #FFF !important;
+    font-size: 11px;
+    border-radius: 3px;
+}
+
+exchange .button-flat-dark:hover {
+    background-color: #445;
+    background: -webkit-linear-gradient(top, #445, #334);
+    text-decoration: none !important;
+}
+
+exchange .button-flat-dark.disable,
+exchange .button-flat-dark.disable:hover {
+    border: 1px solid #AAB;
+    background-color: #BBC;
+    background: -webkit-linear-gradient(top, #AAB, #BBC);
+    cursor: default;
+}
+
+exchange .button-flat-dark.red {
+    border: 1px solid #CA4A4A;
+    background-color: #C44;
+    background: -webkit-linear-gradient(top, #C44, #D55);
+}
+
+exchange .button-flat-dark.red:hover {
+    background-color: #C22;
+    background: -webkit-linear-gradient(top, #C22, #D33);
+}
+
+exchange .header i.flaticon-logout {
+    margin-left: 15px;
+}
+
+exchange .header .button-top {
+    padding: 10px 15px;
+    color: #DDD;
+    position: relative;
+}
+
+exchange .header .button-top i {
+    padding: 0;
+    margin: 0 10px 0 0;
+}
+
+exchange .header .button-top i:before {
+  font-size: 16px;
+  vertical-align: initial;
+}
+
+exchange .header .button-top:hover,
+exchange .header .button-top:hover i:before {
+    cursor: pointer;
+    color: #FFF;
+}
+
+exchange .header .button-top:after {
+    content: '|';
+    color: #DDD;
+    position: absolute;
+    right: 0;
+}
+
+exchange ul.dropdown {
+    z-index: 9999;
+    position: absolute;
+    background-color: #F9F9F9;
+    margin: 5px 0;
+    padding: 10px 0;
+    border-radius: 5px;
+    max-height: 400px;
+    overflow-y: scroll;
+    -webkit-box-shadow: 0px 1px 8px #000;
+}
+
+exchange ul.dropdown * {
+    font-family: Ubuntu,sans-serif;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+exchange ul.dropdown li {
+    padding: 2px 10px;
+    margin: 1px 0;
+    min-width: 300px;
+}
+
+exchange ul.dropdown li:not(.empty):not(.not-found):hover {
+  background: #F1F1F1;
+}
+
+exchange ul.dropdown li.empty,
+exchange ul.dropdown li.not-found {
+  text-align: center;
+}
+
+exchange ul.dropdown span {
+    color: #334;
+    font-size: 11px;
+    min-width: 100px;
+    padding: 3px 0;
+    margin-right: 5px;
+    display: inline-block;
+    font-weight: bold;
+    border: 1px solid #ccd;
+    background: #eef;
+    text-align: center;
+}
+
+exchange ul.dropdown small {
+  color: #778;
+  font-size: 9px;
+  padding: 0 5px;
+}
+
+exchange ul.dropdown label {
+  padding: 0 5px;
+    color: #778;
+}
+
+exchange ul.dropdown img {
+    float: right;
+    margin-top: 2px;
+}
+
+exchange ul.dropdown::-webkit-scrollbar,
+exchange ul.dropdown::-webkit-scrollbar-track,
+exchange ul.dropdown::-webkit-scrollbar-thumb {
+    border-radius: 0 5px 5px 0;
+}
+
+exchange #disconnected {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.9);
+    position: absolute;
+    z-index: 99999;
+}
+
+exchange #disconnected > div {
+    position: absolute;
+    width: 50%;
+    height: 150px;
+    background-color: #fff;
+    top: calc(50% - 120px);
+    left: 25%;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 10px #CCC;
+}
+
+exchange #disconnected h1 {
+    line-height: 40px;
+    text-align: center;
+    background-color: #fb0;
+    color: #F9F9F9;
+    font-size: 16px;
+    font-weight: normal;
+    border-radius: 10px 10px 0 0;
+}
+
+exchange #disconnected span {
+    height: 60px;
+    line-height: 80px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+}
+
+exchange #disconnected .button-flat-dark {
+    display: inline-block;
+    position: absolute;
+    width: 80px;
+    left: calc(50% - 40px);
+    text-align: center;
+    cursor: pointer;
+}
+
+exchange #trade-left {
+  display: block;
+  position: absolute;
+  width: 280px;
+  height: calc(100% - 90px);
+  left: 0;
+  background: #eee;
+}
+
+exchange #trade-right {
+  display: block;
+  position: absolute;
+  width: calc(100% - 300px);
+  height: calc(100% - 110px);
+  padding: 10px;
+  right: 0;
+  overflow-x: auto;
+  transition: transform .5s;
+  transform-style: preserve-3d;
+  background: #eee;
+}
+
+exchange #trade-left ul {
+  height: 30px;
+  background-color: #2C2C3C;
+  background: -webkit-linear-gradient(bottom, #2C2C3C, #2F2F3F 15px, #202030);
+}
+
+exchange #trade-left > div {
+  height: calc(50% - 33px);
+  width: calc(100% + 1px);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: #fff;
+  border-bottom: 2px solid #eee;
+}
+
+exchange #trade-left ul li{
+  color: #AAA;
+  display: inline-block;
+  position: relative;
+  float: left;
+  margin-left: 8px;
+  line-height: 20px;
+}
+
+exchange #trade-left ul li label{
+  color: #AAA;
+  display: block;
+  position: relative;
+  padding: 5px 5px 5px 15px;
+  margin: 0 auto;
+  z-index: 9;
+  cursor: pointer;
+  -webkit-transition: all 0.10s linear;
+}
+
+exchange #trade-left ul li .check{
+  display: block;
+  position: absolute;
+  border: 1.5px solid #AAA;
+  border-radius: 100%;
+  height: 8px;
+  width: 8px;
+  top: 10px;
+  left: 0;
+  z-index: 5;
+  transition: border .10s linear;
+  -webkit-transition: border .10s linear;
+}
+
+exchange #trade-left ul li .check:before{
+  display: block;
+  position: absolute;
+  content: '';
+  border-radius: 100%;
+  height: 4px;
+  width: 4px;
+  top: 2px;
+  left: 2px;
+  margin: auto;
+  transition: background 0.10s linear;
+  -webkit-transition: background 0.10s linear;
+}
+
+exchange #trade-left ul li input[type=radio]{
+  position: absolute;
+  visibility: hidden;
+}
+
+exchange #trade-left ul li input[type=radio]:checked ~ label{
+  color: #BEF;
+}
+
+exchange #trade-left ul li:hover label{
+  color: #fff;
+}
+
+exchange #trade-left ul li:hover .check {
+  border: 2px solid #fff;
+}
+
+exchange #trade-left ul li input[type=radio]:checked ~ .check{
+  border: 2px solid #BEF;
+}
+
+exchange #trade-left ul li input[type=radio]:checked ~ .check::before{
+  background: #BEF;
+}
+
+exchange #trade-left h1 {
+    line-height: 30px;
+    background-color: #2C2C3C;
+    background: -webkit-linear-gradient(bottom, #2C2C3C, #2F2F3F 15px, #202030);
+    color: #aaa;
+    font-weight: normal;
+    padding: 0 0 0 15px;
+}
+
+exchange #trade-left h1 label {
+    color: #CCC;
+    font-size: 11px;
+    padding: 0 5px;
+}
+
+exchange #trade-left h1 label small {
+    color: #aaa;
+    font-size: 8px;
+    vertical-align: bottom;
+    padding: 0 4px;
+}
+
+exchange #home-markets tr:nth-child(2) td {
+    padding-top: 13px;
+}
+
+exchange #trade-markets{
+  width: 100%;
+}
+
+exchange #trade-markets *{
+  font-size: 95%;
+  text-decoration: none;
+}
+
+exchange #trade-markets tr:not(.active) td, exchange #trade-markets tr:not(.active) td *{
+  cursor: pointer;
+}
+
+exchange #trade-markets tr.active {
+  background-color: #eee;
+}
+
+exchange #trade-markets tr:not(.active):hover {
+  background-color: #e9f9e9;
+}
+
+exchange #trade-markets tr > :not(td) {
+  background-color: #778;
+  background: -webkit-linear-gradient(bottom, #778, #556 5px, #667);
+  color: #ddd;
+    font-size: 13px;
+}
+
+exchange #trade-markets tr > :not(td):hover {
+  background-color: #889;
+}
+
+exchange #trade-markets th, exchange #trade-markets td{
+  padding: 5px;
+  width: auto;
+  vertical-align: middle;
+}
+
+exchange #trade-markets th:first-child, exchange #trade-markets td:first-child{
+  width: 100%;
+}
+
+exchange #trade-markets td:not(:first-child) * {
+    font-size: 12px;
+}
+
+exchange #trade-markets .link-trade.active:before {
+  content: '';
+  width: 5px;
+  background-color: #399;
+  height: calc(100% + 10px);
+  display: block;
+  position: absolute;
+  top: -5px;
+  margin-left: -5px;
+}
+
+exchange #market-deals *{
+  cursor: default;
+  font-size: 12px;
+}
+
+exchange #market-deals table{
+  font-size: 12px;
+}
+
+exchange #market-deals th,
+exchange #market-deals td {
+    padding: 8px;
+    width: auto;
+    vertical-align: middle;
+}
+
+exchange #market-deals tr th {
+    background-color: #778;
+    background: -webkit-linear-gradient(bottom, #778, #556 5px, #667);
+    color: #ddd;
+    font-size: 13px;
+}
+
+exchange #market-deals tr.empty td {
+    line-height: 150px;
+    color: #777;
+}
+
+exchange #market-deals small {
+    font-size: 10px;
+    color: #ccc !important;
+}
+
+exchange #trade-right > *{
+  display: block;
+}
+
+exchange .flipped{
+  transform: rotateY(180deg);
+}
+
+exchange .flipY{
+  transform: rotateY(360deg);
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+/* CHART */
+exchange #market-chart {
+  width: 100%;
+  height: 60%;
+  background-color: #FFF;
+  -webkit-box-shadow: 0px 0px 10px #CCC;
+}
+
+exchange #market-chart ul {
+    padding: 0 10px;
+}
+
+exchange #market-chart ul li {
+    display: inline-block;
+    margin: 10px 5px 0 0;
+    padding: 5px 10px;
+    border: 1px solid #aab;
+    background: #eef;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+exchange #market-chart ul li.active {
+    display: inline-block;
+    margin: 10px 5px 0 0;
+    padding: 5px 10px;
+    border: 1px solid #aab;
+    background: #eef;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+
+exchange #market-chart ul li:hover:not(.active) {
+    background: #dde;
+    border: 1px solid #99a;
+}
+
+exchange #market-chart ul li.active {
+    cursor: default;
+    color: #bbc;
+    border-color: #ccd;
+}
+/* TRADE */
+exchange #trade-flip {
+  backface-visibility: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+exchange .flipped  #trade-flip{
+  overflow: hidden;
+}
+
+exchange #trading-panel {
+  position: relative;
+  width: 100%;
+  margin: 10px 0;
+  background-color: #F9F9F9;
+  -webkit-box-shadow: 0px 0px 10px #CCC;
+}
+
+exchange #trading-panel .tab {
+  display: block;
+  height: 30px;
+  background-color: #2C2C3C;
+}
+
+exchange #trading-panel .tab a {
+  display: inline-block;
+  padding: 0 40px;
+  line-height: 30px;
+  height: 100%;
+  background-color: #2C2C3C;
+  color: #BEF;
+}
+
+exchange #trading-panel .tab a.active {
+  background-color: #F9F9F9;
+  color: #2C2C3C;
+  font-family: UbuntuM,sans-serif;
+  font-size: 105%;
+}
+
+exchange #trading-panel .tab a:hover:not(.active) {
+  background-color: #1C1C1C;
+  color: #BEF;
+  cursor: pointer;
+}
+
+exchange #trading-panel .tab .right {
+    line-height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+
+exchange #trading-panel .tab .right > span {
+    color: #fff;
+    padding: 5px;
+    font-size: 11px;
+    line-height: 30px;
+}
+
+exchange #trading-panel .tab .right > span:after {
+    content: '%';
+    font-size: 9px;
+}
+
+exchange #trading-panel .order-panel {
+    width: calc(50% - 31px);
+    display: inline-block;
+    padding: 15px;
+}
+
+exchange #trading-panel .order-panel:first-child {
+    border-right: 2px solid #f0f0f0;
+}
+
+exchange #trading-panel .order-panel .offer-empty {
+    position: absolute;
+    top: 30px;
+    height: calc(100% - 30px);
+    width: 50%;
+    background-color: rgba(44,44,60,0.9);
+    z-index: 999;
+    color: #CCC;
+    text-align: center;
+}
+
+exchange #trading-panel .order-panel .offer-empty.bid {
+    right: 0;
+}
+
+exchange #trading-panel .order-panel .offer-empty.ask {
+    left: 0;
+}
+
+exchange #trading-panel .order-panel .offer-empty > div i:before {
+    color: #CCC;
+    padding: 0 10px;
+    font-size: 16px;
+    vertical-align: baseline;
+}
+
+exchange #trading-panel .order-panel .offer-empty > div {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    top: calc(50% - 10px);
+    color: #fff;
+}
+
+exchange #trading-panel .market-order {
+    position: relative;
+}
+
+exchange #trading-panel .market-order .button {
+    float: right;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 10px;
+}
+
+exchange #trading-panel .market-order label {
+    float: left;
+    display: block;
+    width: 30%;
+    line-height: 30px;
+}
+
+exchange #trading-panel .market-order label:before {
+    content: attr(asset);
+    position: absolute;
+    right: 0;
+    background-color: rgba(255, 255, 255,.50);
+    color: #3a3a4a;
+    height: 25px;
+    line-height: 27px;
+    margin-top: 2px;
+    border-radius: 0 5px 5px 0;
+    font-size: 9px;
+    width: 60px;
+    text-align: center;
+    font-family: UbuntuM, sans-serif;
+}
+
+exchange #trading-panel .market-order input:disabled + label:before {
+    background-color: rgba(44, 44, 60,.30);
+    color: rgba(255,255,255,0.7);
+}
+
+exchange #trading-panel .market-order ul {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+exchange #trading-panel .market-order ul li {
+    display: inline-block;
+    width: 20%;
+    margin: 2px 1% 10px 1%;
+    padding: 2px 1%;
+    background-color: rgba(44,44,60,0.05);
+    text-align: center;
+    border: 1px dashed #ccc;
+    border-radius: 20px;
+}
+
+exchange #trading-panel .market-order ul li:hover {
+    background-color: rgba(44,44,60,0.15);
+    border: 1px dashed #aaa;
+    cursor: pointer;
+}
+
+exchange #trading-panel .market-order input[type="text"] {
+    float: right;
+    margin: 2px 0;
+    width: 60%;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #aaa;
+    font-family: UbuntuM,sans-serif;
+    background-color: rgba(44,44,60,.10);
+    border: 0;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 0 0 rgba(255,255,255,.41), inset 1px 1px 3px 0 rgba(0,0,0,.10);
+}
+
+exchange #trading-panel span.minimum-amount {
+    float: right;
+    display: block;
+    font-size: 11px;
+    line-height: 15px;
+    color: #888;
+}
+
+exchange #trading-panel span.minimum-amount small {
+    font-size: 9px;
+    color: #999;
+}
+
+exchange #trading-panel .order-panel input[type="text"]:disabled {
+    background-color: rgba(44,44,60,0.5);
+    color: rgba(255,255,255,0.7);
+}
+
+exchange #trading-panel .market-balance {
+    position: relative;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 18px;
+}
+
+exchange #trading-panel .market-balance h1{
+    float: left;
+    font-size: 15px;
+}
+
+exchange #trading-panel .market-balance > span{
+  float: right;
+}
+
+exchange #trading-panel .market-balance i {
+    margin-right: 5px;
+    display: inline-flex;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+exchange #trading-panel .market-balance i:before {
+    font-size: 16px;
+    color: #3A3A4A;
+    cursor: pointer;
+}
+
+exchange #trading-panel .market-balance i:hover:before {
+    font-size: 16px;
+    color: #1A1A2A;
+}
+
+exchange #trading-panel .market-balance label {
+  font-size: 13px;
+}
+
+exchange #trading-auth {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  z-index: 9;
+}
+
+exchange #trading-auth * {
+  font-size: 18px;
+}
+
+exchange #trading-auth:before {
+  background-color: #2C2C3C;
+  opacity: .7;
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+exchange #trading-auth div {
+  position: relative;
+  z-index: 10;
+  color: #fff;
+  top: 50%;
+}
+
+exchange #trading-auth a {
+  padding-right: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #5bc;
+}
+
+exchange #trading-auth a:hover {
+  text-decoration: underline;
+  color: #4cd;
+}
+/*
+exchange #authentication {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% - 20px);
+  width: calc(100% - 20px);
+  margin: 10px;
+  z-index: 99;
+}
+
+exchange .container.full #authentication {
+  height: calc(100% - 110px);
+}
+
+exchange #authentication > div:not(.loading){
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 200px);
+    margin: 0 100px;
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 15px #223;
+}
+*/
+exchange #authentication .button{
+  text-align: center;
+  padding: 8px 30px !important;
+  border-radius: 5px !important;
+  margin-left: 5px;
+}
+
+exchange #authentication .button.submit{
+  padding: 8px 80px !important;
+}
+
+exchange #authentication .bottom{
+  position: absolute;
+  display: flex;
+  right: 10px;
+  bottom: 10px;
+}
+
+exchange #authentication input[name="otp"] {
+    left: 68px;
+    border: 1px solid #2a2a3a;
+    padding: 0 5px;
+    text-align: center;
+    color: #fff;
+    background-color: #4a4a5a;
+    border-radius: 0 5px 5px 0;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+exchange #authentication input::-webkit-input-placeholder{
+  font-size: 12px;
+}
+
+exchange #authentication input[name="otp"].red {
+    background-color: #FF5566;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FF5566), to(#DD2233));
+}
+
+exchange #authentication input[name="otp"] + i {
+    left: 10px;
+    line-height: 30px;
+    background: #2a2a3a;
+    width: 28px;
+    padding: 0 15px;
+    border-radius: 5px 0 0 5px;
+}
+
+exchange #authentication input[name="otp"] +i:before {
+    font-size: 28px;
+}
+/*
+exchange #authentication .tab a{
+  padding: 0 20px;
+    background-color: #1a1a2a;
+    color: #bef;
+    font-weight: normal;
+    display: inline-block;
+    margin: 10px 0 10px 0;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+exchange #authentication .tab a.active {
+    background-color: #3a3a4a;
+    cursor: default;
+}
+
+exchange #authentication .tab:before {
+  position: absolute;
+    content: '';
+    width: 98%;
+    display: inline-block;
+    height: 4px;
+    margin-top: 40px;
+    left: 0;
+    background-image: linear-gradient(to right, rgba(58,58,74,1) 80%, rgba(58,58,74,0));
+}
+*/
+exchange #authentication .text {
+  margin: 10px 0;
+}
+exchange #authentication .text span {
+    display: block;
+    padding: 3px 0 3px 25px;
+    position: relative;
+}
+
+exchange #authentication .result.error {
+    position: absolute;
+    color: #933;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    bottom: 45px;
+    background-color: #fee;
+}
+
+exchange #authentication .text span:before {
+    content: "●";
+    margin: -1px 0 0 -15px;
+    color: #999;
+    font-size: 12px;
+    position: absolute;
+}
+
+exchange table.authentic {
+  margin-top: 5px;
+}
+
+exchange table.authentic *{
+    font-size: 13px;
+}
+
+exchange table.authentic tr:first-child {
+    background-color: #2a2a3a;
+    -webkit-box-shadow: 0px 1px 8px #000;
+}
+
+exchange table.authentic th{
+  background-color: #2a2a3a;
+    padding: 8px 0 5px 0;
+    color: #bef;
+}
+
+exchange table.authentic th:before{
+  display: none;
+}
+
+exchange table.authentic .sort:not(.ascending):not(.descending):after{
+    color: #ddd;
+}
+
+exchange table.authentic td:first-child * {
+    font-family: UbuntuMono;
+    font-size: 14px;
+    text-align: left;
+}
+
+exchange table.authentic td {
+  border-top: 0;
+  vertical-align: middle;
+  padding: 0 10px;
+}
+
+exchange table.authentic tr:not(:last-child) td {
+  border-bottom: 1px solid #eee;
+}
+exchange table.authentic tr:nth-child(2) td {
+    padding-top: 3px;
+}
+
+exchange table.authentic:not(#auth-session) tr.active td:first-child * {
+    cursor: default;
+}
+
+exchange table.authentic tr td.active *,
+exchange table#auth-session.authentic tr td.expired *  {
+  color: #933;
+}
+
+exchange table.authentic tr td.expired *,
+exchange table#auth-session.authentic tr td.active *  {
+  color: #393;
+}
+
+exchange .authentic .radio{
+  display: inline-block;
+  position: relative;
+  line-height: 18px;
+  width: calc(100% - 10px)
+}
+
+exchange .authentic .radio label{
+  display: block;
+  position: relative;
+  padding: 5px 5px 5px 20px;
+  margin: 0 auto;
+  z-index: 9;
+  cursor: pointer;
+  -webkit-transition: all 0.10s linear;
+}
+
+exchange .authentic .radio .check{
+  display: block;
+  position: absolute;
+  border: 1.5px solid #AAA;
+  border-radius: 100%;
+  height: 8px;
+  width: 8px;
+  top: 8px;
+  z-index: 5;
+  transition: border .10s linear;
+  -webkit-transition: border .10s linear;
+}
+
+exchange .authentic .radio .check:before{
+  display: block;
+  position: absolute;
+  content: '';
+  border-radius: 100%;
+  height: 4px;
+  width: 4px;
+  top: 2px;
+  left: 2px;
+  margin: auto;
+  transition: background 0.10s linear;
+  -webkit-transition: background 0.10s linear;
+}
+
+exchange .authentic .radio input[type=radio]{
+  position: absolute;
+  visibility: hidden;
+}
+
+exchange .authentic tr:not(.active) .radio input[type=radio]:checked ~ label{
+  color: #378;
+}
+
+exchange .authentic .radio input[type=radio]:checked ~ .check{
+  border: 2px solid #378;
+}
+
+exchange .authentic .radio input[type=radio]:checked ~ .check::before{
+  background: #378;
+}
+
+exchange .authentic tr:hover:not(.active) td{
+  background-color: #e9f9e9;
+}
+
+exchange .authentic tr:hover th{
+  background-color: #1a1a2a;
+}
+
+exchange .authentic tr.empty td{
+  height: 300px;
+}
+/*
+exchange #balances {
+    position: absolute;
+    top: 10px;
+    padding: 15px 0;
+    height: calc(100% - 50px);
+    width: calc(100% - 100px);
+    margin: 0 50px;
+    overflow: hidden;
+    z-index: 99;
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 15px #223;
+}
+
+exchange .container.full #balances {
+  height: calc(100% - 140px);
+}
+
+exchange #balances > div:first-child {
+   line-height: 40px;
+}
+
+exchange #balances > div:last-child {
+   height: calc(100% - 40px);
+   overflow-x: auto;
+   border-bottom: 3px solid #eee;
+}
+*/
+exchange #balances table tr:first-child {
+    -webkit-box-shadow: 0px 0px 10px #aaa;
+}
+
+exchange #balances table tr * {
+    font-size: 12px;
+}
+
+exchange #balances table td:nth-child(n+6) {
+  width: 30px;
+    padding: 0 5px;
+}
+
+exchange #balances table td .button-flat-dark {
+    font-size: 11px;
+}
+
+exchange #balances table th {
+    font-family: Ubuntu, sans-serif;
+    background-color: #2C2C3C;
+    background: -webkit-linear-gradient(bottom, #2C2C3C, #2F2F3F 15px, #202030);
+    color: #fff;
+    font-size: 12px;
+    padding: 0 5px;
+    line-height: 35px;
+}
+
+exchange #balances table td:nth-child(2) {
+    max-width: 20%;
+}
+
+exchange #balances table .sort:after {
+  font-size: 13px;
+}
+
+exchange #balances table .sort:not(.ascending):not(.descending):after {
+    color: #def;
+}
+
+exchange #balances table td.active a {
+    color: #3A3A4A;
+    cursor: default;
+    text-decoration: none;
+}
+
+exchange #balances h1 {
+  line-height: 40px;
+  position: relative;
+  margin-left: 10px;
+    font-weight: normal;
+}
+
+exchange #balances .checkbox {
+  position: absolute;
+    width: 65px;
+    margin: 10px;
+}
+
+exchange #balances .checkbox:before,
+exchange #balances .checkbox:after {
+  top: -10px;
+  font-size: 11px;
+}
+
+exchange #balances .checkbox:after {
+left: 40px;
+}
+
+exchange #balances .checkbox label {
+    width: 30px;
+    height: 13px;
+    top: 4px;
+}
+
+exchange #balances table .deposit-address {
+    width: 700px;
+    margin: auto;
+}
+
+exchange #balances .deposit-address img {
+    float: left;
+    margin: 10px 20px 10px 0;
+    height: 130px;
+    width: 130px;
+}
+
+exchange #balances table .deposit-address h1 {
+    font-weight: bold;
+    font-size: 13px;
+    padding: 10px 0;
+    margin: 0;
+    line-height: 100%;
+}
+
+exchange #balances table .deposit-address span {
+    display: inline-block;
+    width: 445px;
+    padding: 8px 50px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    background: #f5f5f5;
+    color: #477 !important;
+    cursor: pointer;
+}
+
+exchange #balances table .deposit-address i:before {
+    font-size: 15px;
+    margin-left: -18px;
+    margin-top: 3px;
+    position: absolute;
+    cursor: pointer;
+}
+
+exchange #balances table .deposit-address h2 {
+    margin-top: 10px;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+exchange #balances table .deposit-address label {
+    display: block;
+    text-align: left;
+    padding-left: 10px;
+}
+
+exchange #balances table .deposit-address label b {
+    font-weight: bold;
+}
+
+exchange #balances table .deposit-address label:before {
+    content: '•';
+    margin-right: 5px;
+}
+
+exchange #orders ul {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+}
+
+exchange #balances table .deposit-demo {
+    width: 500px;
+    margin: auto;
+    border: 1px solid #eee;
+    background: #fafafa;
+    padding: 10px 20px;
+}
+
+exchange #balances table .deposit-demo h2 {
+    line-height: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+exchange #balances table .deposit-demo label {
+    display: block;
+    text-align: left;
+    line-height: 15px;
+}
+
+exchange #balances table .deposit-demo label:before {
+    content: '•';
+    margin-right: 5px;
+}
+
+exchange #balances table .deposit-demo label small{
+    font-size: 10px;
+}
+
+exchange #balances table .deposit-demo span {
+    display: inline-block;
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #f5f5f5;
+    color: #999;
+}
+
+exchange #balances table .deposit-demo span.error {
+    color: #ff0000;
+}
+
+exchange #balances table .deposit-demo .button {
+    position: relative;
+    width: 300px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+exchange #balances table .withdraw-demo {
+    width: 500px;
+    margin: auto;
+    border: 1px solid #eee;
+    background: #fafafa;
+    padding: 10px 20px;
+}
+
+exchange #balances table .withdraw-demo span {
+    display: inline-block;
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #f5f5f5;
+    color: #999;
+}
+
+exchange #orders ul li{
+  color: #AAA;
+  display: inline-block;
+  position: relative;
+  float: left;
+  margin-left: 8px;
+  line-height: 20px;
+}
+
+exchange #orders ul li label{
+  color: #AAA;
+  display: block;
+  position: relative;
+  padding: 5px 5px 5px 15px;
+  margin: 0 auto;
+  z-index: 9;
+  cursor: pointer;
+  -webkit-transition: all 0.10s linear;
+}
+
+exchange #orders ul li .check{
+  display: block;
+  position: absolute;
+  border: 1.5px solid #AAA;
+  border-radius: 100%;
+  height: 8px;
+  width: 8px;
+  top: 10px;
+  left: 0;
+  z-index: 5;
+  transition: border .10s linear;
+  -webkit-transition: border .10s linear;
+}
+
+exchange #orders ul li .check:before{
+  display: block;
+  position: absolute;
+  content: '';
+  border-radius: 100%;
+  height: 4px;
+  width: 4px;
+  top: 2px;
+  left: 2px;
+  margin: auto;
+  transition: background 0.10s linear;
+  -webkit-transition: background 0.10s linear;
+}
+
+exchange #orders ul li input[type=radio]{
+  position: absolute;
+  visibility: hidden;
+}
+
+exchange #orders ul li input[type=radio]:checked ~ label{
+  color: #3A3A4A;
+}
+
+exchange #orders ul li:hover label{
+  color: #1A1A2A;
+}
+
+exchange #orders ul li:hover .check {
+  border: 2px solid #1A1A2A;
+}
+
+exchange #orders ul li input[type=radio]:checked ~ .check{
+  border: 2px solid #3A3A4A;
+}
+
+exchange #orders ul li input[type=radio]:checked ~ .check::before{
+  background: #3A3A4A;
+}
+
+exchange .market-depth {
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+    background-color: #F9F9F9;
+    -webkit-box-shadow: 0px 0px 10px #CCC;
+}
+
+exchange .market-depth {
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+    padding: 0 0 0 0;
+    background-color: #F9F9F9;
+    -webkit-box-shadow: 0px 0px 10px #CCC;
+}
+
+exchange .market-depth table {
+    width: 50%;
+    display: inline-block;
+    overflow: hidden;
+}
+
+exchange .market-depth table tr {
+    background-color: #fff;
+}
+
+exchange .market-depth table th {
+    font-size: 13px;
+  cursor: default;
+}
+
+exchange .market-depth table td{
+    padding: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+exchange .market-depth table th:not(:first-child) {
+    width: 34%;
+}
+
+exchange .market-depth table tr:not(:last-child) td {
+    border: 0;
+}
+
+exchange .market-depth table tr:nth-child(2) td {
+    padding-top: 15px;
+}
+
+exchange .market-depth table tr:hover td {
+  font-weight: bold;
+}
+
+exchange .market-depth table .percent {
+    position: absolute;
+    right: 0;
+    height: 14px;
+    background-color: rgba(0,255,0,0.1);
+}
+
+exchange .market-depth table .percent.ask {
+    left: 0;
+    background-color: rgba(255,0,0,0.1);
+}
+
+exchange .market-depth table td:not(.percent) {
+  width: 34%;
+    line-height: 15px;
+}
+
+exchange .market-depth .depth-ask *:not(th) {
+    color: #F00;
+}
+
+exchange .market-depth .depth-bid *:not(th) {
+    color: #060;
+}
+
+exchange .market-depth .depth-price {
+    text-align: center;
+    font-size: 20px;
+    padding: 6px 0 8px 0;
+    background-color: rgba(44, 44, 60, 0.1);
+    position: relative;
+    cursor: pointer;
+}
+
+exchange .market-depth .depth-price * {
+    cursor: pointer;
+}
+
+exchange .market-depth .depth-price span {
+    font-size: 15px;
+    padding: 0 20px;
+    position: relative;
+    color: #156;
+}
+
+exchange .market-depth .depth-price > label {
+    position: absolute;
+    left: 0;
+    padding: 6px 15px;
+    color: rgba(44, 44, 60,.5);
+}
+
+exchange .market-depth .depth-price.price_up > label {
+    color: rgba(0,102,0,.5);
+}
+
+exchange .market-depth .depth-price.price_down > label {
+    color: rgba(255,0,0,.5);
+}
+
+exchange .market-depth .depth-price.price_up {
+  background-color: rgba(0, 255, 0, 0.1);
+}
+
+exchange .market-depth .depth-price.price_down {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+exchange .market-depth .depth-price.price_up span {
+    color: #060;
+}
+
+exchange .market-depth .depth-price.price_down span {
+    color: #F00;
+}
+
+exchange .market-depth .depth-price.price_up span:before,
+exchange .market-depth .depth-price.price_down span:before {
+    font-family: "Icomoon";
+    content: "\f133";
+    position: absolute;
+    top: 2px;
+    font-size: 12px;
+}
+
+exchange .market-depth .depth-price.price_up span:before {
+  left: 0;
+}
+
+exchange .market-depth .depth-price.price_down span:before {
+    content: "\f134";
+  right: 0;
+}
+
+exchange .order-table {
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+    background-color: #F9F9F9;
+    -webkit-box-shadow: 0px 0px 10px #CCC;
+}
+
+exchange #orders.order-table {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+}
+
+exchange .order-table h1 {
+  line-height: 30px;
+    font-size: 14px;
+    padding: 5px 15px;
+    font-weight: normal;
+}
+
+exchange .order-table h1 label {
+    font-size: 12px;
+    padding: 0 5px;
+    font-weight: bold;
+}
+
+exchange .order-table h1 label small {
+  color: #AAA;
+    font-size: 8px;
+    vertical-align: bottom;
+    padding: 0 4px;
+}
+
+exchange .order-table tr th {
+    background: -webkit-linear-gradient(bottom, #778, #556 5px, #667);
+    background-color: #2C2C3C;
+    background: -webkit-linear-gradient(bottom, #2C2C3C, #2F2F3F 15px, #202030);
+    font-size: 12px;
+    cursor: default;
+}
+
+exchange .order-table tr.empty td {
+    line-height: 100px;
+    color: #777;
+}
+
+exchange .order-table td {
+    font-size: 12px;
+    line-height: 30px;
+    padding: 0 5px;
+}
+
+exchange .order-table td .button-flat {
+    border: 1px solid #445;
+    font-size: 11px;
+    padding: 3px 10px;
+    color: #eee;
+    background-color: #889;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#889), to(#667));
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+exchange .order-table td .button-flat:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#778), to(#556));
+}
+
+exchange .order-table table tr:nth-child(2) td {
+  padding-top: 5px;
+}
+
+exchange .order-table .link-trade * {
+  cursor: pointer;
+}
+
+exchange .order-table .link-trade a {
+  color: #389;
+  font-size: 11px;
+}
+
+exchange .order-table .link-trade small {
+  font-size: 10px;
+}
+
+exchange .order-table .link-trade:hover * {
+  text-decoration: none;
+  color: #389;
+}
+
+exchange .order-table .link-trade:hover {
+  cursor: pointer;
+  background: #EEF;
+}
+
+exchange #assets-panel {
+    height: calc(100% - 45px);
+    overflow-y: scroll;
+}
+
+exchange #assets-panel td:first-child {
+    font-family: UbuntuM, sans-serif;
+    font-size: 11px;
+}
+
+exchange #history-record tr.empty td,
+exchange #orders-record tr.empty td,
+exchange #deposit-history tr.empty td,
+exchange #withdraw-history tr.empty td {
+    line-height: 300px;
+}
+
+exchange #history-record td.load,
+exchange #deposit-history td.load,
+exchange #withdraw-history td.load {
+    height: 300px;
+}
+
+exchange #history-record td .loading,
+exchange #deposit-history td .loading,
+exchange #withdraw-history td .loading {
+    top: 33px;
+    height: calc(100% - 33px);
+}
+
+exchange #history-record td .loading .wrapper,
+exchange #deposit-history td .loading .wrapper,
+exchange #withdraw-history td .loading .wrapper {
+    background-color: #fff;
+    opacity: 1;
+}
+
+exchange #history-record td .loading .wrapper span,
+exchange #deposit-history td .loading .wrapper span,
+exchange #withdraw-history td .loading .wrapper span {
+    top: calc(50% - 40px);
+    color: #334;
+    left: 0;
+    font-size: 12px;
+    line-height: 20px;
+}
+/*exchange #orders {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% - 20px);
+  width: calc(100% - 20px);
+  margin: 10px;
+  z-index: 99;
+}*/
+
+exchange #deposit-history,
+exchange #withdraw-history {
+    height: calc(100% - 45px);
+    overflow-y: scroll;
+}
+
+exchange #deposit-history td:first-child,
+exchange #withdraw-history td:first-child {
+  font-weight: bold;
+}
+
+exchange #deposit-history tr:not(.empty) td:last-child i:before,
+exchange #withdraw-history tr:not(.empty) td:last-child i:before {
+  font-size: 12px;
+  line-height: 16px;
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+exchange #deposit-history td small,
+exchange #withdraw-history td small {
+    font-size: 11px;
+}
+
+exchange .slide-top > div > div:not(.loading) {
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 200px);
+    margin: 0 100px;
+    background-color: #F9F9F9;
+    border-radius: 20px 20px 5px 5px;
+    -webkit-box-shadow: 5px 5px 15px #223;
+}
+
+exchange .slide-top > div#orders > div:not(.loading) {
+    width: calc(100% - 40px);
+    margin: 0 20px;
+}
+
+exchange .slide-top > div#balances > div:not(.loading) {
+    width: calc(100% - 100px);
+    margin: 0 50px;
+}
+
+exchange .slide-top > div#orders .scrollable {
+    overflow-y: auto;
+    height: calc(100% - 50px);
+}
+
+exchange .slide-top > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% - 20px);
+  width: calc(100% - 20px);
+  margin: 10px;
+  z-index: 99;
+}
+
+exchange .container.full .slide-top > div {
+  height: calc(100% - 110px);
+}
+
+exchange .slide-top .tab {
+  display: block;
+  height: 30px;
+  text-align: center;
+  border-radius: 5px 5px 0 0;
+  background: -webkit-linear-gradient(top, #556, #667 35px, #445);
+}
+
+exchange .slide-top .tab-wrapper {
+  height: calc(100% - 40px);
+}
+
+exchange .slide-top .tab a {
+  display: inline-block;
+  padding: 0 40px;
+  line-height: 30px;
+  height: 100%;
+  font-family: UbuntuM,sans-serif;
+  background: -webkit-linear-gradient(top, #556, #667 35px, #445);
+  color: #F9F9F9;
+}
+
+exchange .slide-top .tab a.active {
+  background: #F9F9F9;
+  color: #445;
+  font-size: 105%;
+}
+
+exchange .slide-top .tab a:hover:not(.active) {
+  background: -webkit-linear-gradient(top, #445, #556 35px, #223);
+  cursor: pointer;
+}
+
+exchange .slide-top .tab {
+  display: block;
+  height: 30px;
+  text-align: center;
+}
+
+exchange .slide-top .flaticon-remove {
+  right:  8px;
+}
+
+exchange .slide-top .flaticon-remove:before {
+  cursor: pointer;
+  color: #FCC;
+}
+
+exchange .slide-top input.filter {
+    height: 20px;
+    padding: 5px 10px;
+    margin: 10px;
+    width: 25%;
+    background-color: rgba(74,74,90,.6);
+    color: #fff;
+    font-size: 13px;
+    font-style: normal;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border: 0;
+    font-family: UbuntuM,sans-serif;
+    -webkit-box-shadow: 1px 1px 0 0 rgba(255,255,255,.41), inset 1px 1px 3px 0 rgba(0,0,0,.10);
+    -moz-box-shadow: 1px 1px 0 0 rgba(255,255,255,.41),inset 1px 1px 3px 0 rgba(0,0,0,.10);
+    box-shadow: 1px 1px 0 0 rgba(255,255,255,.41), inset 1px 1px 3px 0 rgba(0,0,0,.10);
+}
+
+exchange .loading-dot {
+  width: 100%;
+  text-align: center;
+}
+
+exchange .loading-dot > div {
+  width: 8px;
+  height: 8px;
+  margin: 0 1px;
+  background-color: #389;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: loading-kf 1.4s infinite ease-in-out both;
+  animation: loading-kf 1.4s infinite ease-in-out both;
+}
+
+exchange .loading-dot div:nth-child(1) {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+exchange .loading-dot div:nth-child(2) {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes loading-kf {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes loading-kf {
+  0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
